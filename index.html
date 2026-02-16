@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>3D Hand Particle System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video id="video" playsinline muted></video>
+  <canvas id="three-canvas"></canvas>
+
+  <div id="ui">
+    <button data-shape="heart">❤️</button>
+    <button data-shape="flower">🌸</button>
+    <button data-shape="saturn">🪐</button>
+    <button data-shape="fireworks">🎆</button>
+    <button data-shape="star">⭐</button>
+  </div>
+
+  <audio id="bgm" src="music.mp3" loop></audio>
+
+  <!-- Library kamera -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <!-- Script utama -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
